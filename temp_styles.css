@@ -1,0 +1,88 @@
+
+/* Minimized Player State */
+.global-player.is-minimized {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border-radius: 50%;
+    background: rgba(4, 7, 20, 0.95);
+    transform: translateX(-50%) translateY(0) scale(1);
+    left: auto;
+    right: 2rem;
+    bottom: 2rem;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.global-player.is-minimized:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(92, 240, 255, 0.4);
+}
+
+.global-player.is-minimized .player-meta,
+.global-player.is-minimized .player-controls,
+.global-player.is-minimized .player-progress,
+.global-player.is-minimized #sc-widget {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: opacity 0.2s ease;
+}
+
+.player-minimize {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: color 0.2s ease, background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-minimize:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.player-minimized-content {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s ease 0s;
+}
+
+.global-player.is-minimized .player-minimized-content {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.minimized-icon {
+    display: flex;
+    gap: 3px;
+    align-items: flex-end;
+    height: 20px;
+}
+
+.minimized-icon span {
+    width: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.minimized-icon span:nth-child(1) { height: 60%; animation-delay: 0s; }
+.minimized-icon span:nth-child(2) { height: 100%; animation-delay: 0.2s; }
+.minimized-icon span:nth-child(3) { height: 40%; animation-delay: 0.4s; }
+
+@keyframes bounce {
+    0%, 100% { transform: scaleY(0.5); }
+    50% { transform: scaleY(1); }
+}

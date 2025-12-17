@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AliStudio | Code & Music Creative Lab</title>
+    <meta name="description"
+        content="AliStudio - studio sáng tạo kết hợp lập trình và âm nhạc, mang giải pháp công nghệ giàu cảm hứng cho thương hiệu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-loader" aria-live="polite" aria-label="AliStudio loading">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="assets/logo_new.jpg" alt="AliStudio Logo" class="logo-mark-img">
+                <span class="logo-text">AliStudio</span>
+            </div>
+            <div class="loader-progress-wrapper">
+                <div class="loader-progress-bar"></div>
+            </div>
+            <div class="loader-status">
+                <span class="status-text">Initializing Core...</span>
+                <span class="status-percent">0%</span>
+            </div>
+        </div>
+        <div class="loader-bg"></div>
+    </div>
+    <header class="primary-header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo_new.jpg" alt="AliStudio Logo" class="logo-mark-img">
+                <div>
+                    <p class="logo-title">AliStudio</p>
+                    <p class="logo-tagline">Code & Music Lab</p>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Mở menu">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="primary-nav">
+                <a href="#about">Về chúng tôi</a>
+                <a href="#services">Dịch vụ</a>
+                <a href="#experience">Phương pháp</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#blog">Blog</a>
+                <a href="tts.html">TTS Lab</a>
+                <a href="https://www.facebook.com/aliofficial17" target="_blank" rel="noreferrer noopener"
+                    class="cta-link">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow">Studio lập trình & âm nhạc</p>
+                    <h1 class="animated-headline">Biến ý tưởng thành <span>trải nghiệm</span> đa giác quan</h1>
+                    <p class="lead">
+                        AliStudio hòa quyện công nghệ, âm nhạc và thiết kế để tạo nên các sản phẩm số đầy cảm hứng: từ
+                        microsite tương tác, workshop sáng tạo đến bản nhạc thương hiệu độc đáo.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#contact">Đặt lịch tư vấn</a>
+                        <a class="btn ghost" href="#services">Khám phá dịch vụ</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="hero-pill">
+                            <span>Drop mới</span>
+                            <p>Sonic NFT show | WebGPU + Live set</p>
+                        </div>
+                        <ul class="hero-tags">
+                            <li>Creative coding</li>
+                            <li>Audio design</li>
+                            <li>Spatial web</li>
+                        </ul>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <p class="stat-number">48+</p>
+                            <p class="stat-label">dự án sáng tạo</p>
+                        </div>
+                        <div>
+                            <p class="stat-number">12</p>
+                            <p class="stat-label">đối tác toàn cầu</p>
+                        </div>
+                        <div>
+                            <p class="stat-number">4.9/5</p>
+                            <p class="stat-label">điểm hài lòng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="gradient-wave" aria-hidden="true"></div>
+                    <div class="hero-visual" data-reveal>
+                        <div class="orb large" data-depth="0.4"></div>
+                        <div class="orb medium" data-depth="0.6"></div>
+                        <div class="orb small" data-depth="0.9"></div>
+                        <div class="media-console" data-tilt data-depth="0.9">
+                            <div class="console-header">
+                                <span class="dot red"></span>
+                                <span class="dot amber"></span>
+                                <span class="dot green"></span>
+                                <p>AliStudio Visualizer</p>
+                            </div>
+                            <div class="console-body">
+                                <div class="wave-track">
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                </div>
+                                <div class="console-meta">
+                                    <p>Live BPM <strong>118</strong></p>
+                                    <p>Shader pack <strong>Neon Pulse</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-card floating" data-tilt data-depth="1.1">
+                            <p>Creative Sprint</p>
+                            <h3>Code + Sound</h3>
+                            <ul>
+                                <li>UX prototype</li>
+                                <li>Generative soundtrack</li>
+                                <li>Immersive launch</li>
+                            </ul>
+                        </div>
+                        <div class="hero-chip" data-depth="0.8">Realtime AV Engine · v3.4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="brand-strip" data-reveal>
+            <div class="container">
+                <p>Được tin tưởng bởi đội ngũ dẫn đầu:</p>
+                <div class="brand-marquee">
+                    <span>Bitwave Labs</span>
+                    <span>Syntex Asia</span>
+                    <span>Monsoon Music</span>
+                    <span>District 3</span>
+                    <span>IndieVerse</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="section" id="about">
+            <div class="container split">
+                <div data-reveal>
+                    <p class="eyebrow">Sứ mệnh</p>
+                    <h2>Studio lai giữa kỹ sư phần mềm và nghệ sĩ âm thanh</h2>
+                </div>
+                <p data-reveal>
+                    Chúng tôi tin rằng mỗi dòng mã đều có thể ngân vang như một giai điệu. AliStudio giúp thương hiệu
+                    định hình câu chuyện mới bằng
+                    những trải nghiệm số sống động: interactive web, audio branding, live coding performance và workshop
+                    truyền cảm hứng.
+                </p>
+            </div>
+        </section>
+
+        <section class="section cards" id="services">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Dịch vụ nổi bật</p>
+                    <h2>Bảng phối kết hợp công nghệ & âm nhạc</h2>
+                </div>
+                <div class="card-grid">
+                    <article class="card" data-tilt data-depth="0.4" data-reveal>
+                        <span class="card-icon">01</span>
+                        <h3>Interactive Launchpad</h3>
+                        <p>Thiết kế microsite, kiosk trải nghiệm, sự kiện XR mang dấu ấn âm nhạc thời gian thực.</p>
+                        <ul>
+                            <li>WebGL & audio-reactive</li>
+                            <li>Livestream integration</li>
+                            <li>AR filter</li>
+                        </ul>
+                    </article>
+                    <article class="card" data-tilt data-depth="0.55" data-reveal>
+                        <span class="card-icon">02</span>
+                        <h3>Audio Branding</h3>
+                        <p>Xây dựng bản sắc âm thanh độc quyền từ chiến dịch, podcast đến nhạc chờ ứng dụng.</p>
+                        <ul>
+                            <li>Signature motif</li>
+                            <li>Generative stems</li>
+                            <li>Mix & mastering</li>
+                        </ul>
+                    </article>
+                    <article class="card" data-tilt data-depth="0.3" data-reveal>
+                        <span class="card-icon">03</span>
+                        <h3>Dev + Sound Workshop</h3>
+                        <p>Workshop live coding, đào tạo creative coding cho đội ngũ nội bộ hoặc cộng đồng.</p>
+                        <ul>
+                            <li>Live coding show</li>
+                            <li>Mentor 1-1</li>
+                            <li>Project showcase</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section showcase" id="showcase">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Project highlight</p>
+                    <h2>Những bản dựng đa chiều gần đây</h2>
+                </div>
+                <div class="showcase-grid">
+                    <article class="showcase-item" data-reveal data-tilt data-depth="0.35">
+                        <div class="showcase-top">
+                            <p class="label">Immersive Site</p>
+                            <p class="duration">6 tuần</p>
+                        </div>
+                        <h3>Bitwave Launch</h3>
+                        <p>Microsite sử dụng WebGPU & spatial audio, giúp khách hàng khám phá pipeline blockchain bằng
+                            âm thanh.</p>
+                        <ul>
+                            <li>Dynamic shader editor</li>
+                            <li>Soundtrack sync</li>
+                            <li>Realtime analytics</li>
+                        </ul>
+                    </article>
+                    <article class="showcase-item" data-reveal data-tilt data-depth="0.45">
+                        <div class="showcase-top">
+                            <p class="label">Live Stage</p>
+                            <p class="duration">4 tuần</p>
+                        </div>
+                        <h3>Monsoon Live Jam</h3>
+                        <p>Thiết kế hệ thống live coding tương tác với khán giả, đồng bộ ánh sáng, midi và visuals.</p>
+                        <ul>
+                            <li>TouchDesigner bridge</li>
+                            <li>Audience trigger</li>
+                            <li>Hybrid DJ set</li>
+                        </ul>
+                    </article>
+                    <article class="showcase-item" data-reveal data-tilt data-depth="0.3">
+                        <div class="showcase-top">
+                            <p class="label">Audio branding</p>
+                            <p class="duration">3 tuần</p>
+                        </div>
+                        <h3>District3 Sonic ID</h3>
+                        <p>Bản sắc âm thanh modul hóa cho hệ thống coworking, gồm ambient loop và notification cues.</p>
+                        <ul>
+                            <li>Generative stems</li>
+                            <li>Binaural mix</li>
+                            <li>Guideline kit</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section highlight" id="experience">
+            <div class="container experience-grid">
+                <div class="experience-intro" data-reveal>
+                    <p class="eyebrow">Phương pháp</p>
+                    <h2>Từ bản phác thảo đến trải nghiệm trình diễn</h2>
+                    <p>AliStudio kết hợp quy trình agile và jam session để đảm bảo nhịp điệu sáng tạo luôn song song
+                        cùng tiến độ kỹ thuật.</p>
+                </div>
+                <div class="exp-timeline">
+                    <article class="timeline-card" data-reveal>
+                        <p class="timeline-label">00 · Immersion</p>
+                        <h3>Decode brand DNA</h3>
+                        <p>Workshop ảo hóa tầm nhìn, moodboard âm thanh và xác định KPI trải nghiệm.</p>
+                    </article>
+                    <article class="timeline-card" data-reveal>
+                        <p class="timeline-label">01 · Prototype</p>
+                        <h3>Jam & rapid build</h3>
+                        <p>Ghép nối code sandbox với chất liệu âm nhạc để tạo demo tương tác trong 10 ngày.</p>
+                    </article>
+                    <article class="timeline-card" data-reveal>
+                        <p class="timeline-label">02 · Launch</p>
+                        <h3>Live performance</h3>
+                        <p>Triển khai hệ thống trình diễn, chuẩn hóa tài liệu vận hành và đào tạo đội ngũ nội bộ.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section testimonials" id="voices">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Client voices</p>
+                    <h2>Âm vang từ cộng đồng sáng tạo</h2>
+                </div>
+                <div class="quote-grid">
+                    <article class="quote-card" data-reveal>
+                        <p class="quote">“AliStudio biến buổi ra mắt sản phẩm của Bitwave thành một performance thực
+                            thụ. Từ storytelling đến âm nhạc đều ăn khớp dữ dội.”</p>
+                        <p class="author">Mai Thảo · Creative Director</p>
+                    </article>
+                    <article class="quote-card" data-reveal>
+                        <p class="quote">“Những workshop live coding của họ giúp đội ngũ mình hiểu sâu về audio-reactive
+                            design chỉ trong hai tuần.”</p>
+                        <p class="author">Minh Lâm · Head of Product</p>
+                    </article>
+                    <article class="quote-card" data-reveal>
+                        <p class="quote">“Âm thanh signature AliStudio tạo ra làm mình nhớ đến lần đầu nghe chillwave,
+                            nhưng lại đầy công nghệ và tương lai.”</p>
+                        <p class="author">Haruka Ito · Indie Producer</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Gallery</p>
+                    <h2>Các bản phối trực quan</h2>
+                    <p>Chạm để mở player dưới màn hình và nghe ngay bản phối SoundCloud tương ứng.</p>
+                </div>
+                <div class="gallery-grid">
+                    <article class="gallery-item" data-label="SoundCloud Session" data-tilt data-depth="0.45"
+                        data-reveal data-track="Thất Tình · Ali Remake"
+                        data-url="https://soundcloud.com/kl17ss/th-t-t-nh-ali-remake?si=fd929aba7452455c817143ba6f423283&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        data-tagline="Sonic Identity">
+                        <div class="gallery-info">
+                            <p class="song-title">Thất Tình · Ali Remake</p>
+                            <p class="song-meta">Sonic Identity</p>
+                        </div>
+                        <button class="gallery-cta" aria-label="Nghe Thất Tình · Ali Remake">Nghe ngay</button>
+                    </article>
+                    <article class="gallery-item" data-label="SoundCloud Session" data-tilt data-depth="0.35"
+                        data-reveal data-track="Xuân Huy Hoàng · Rock Version"
+                        data-url="https://soundcloud.com/kl17ss/xuan-huy-hoang-dat-long-vinh-ft-khaiduy-rock-version?si=7381af4e5b71475581b16f81bd2a73bf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        data-tagline="Interactive Stage">
+                        <div class="gallery-info">
+                            <p class="song-title">Xuân Huy Hoàng · Rock Version</p>
+                            <p class="song-meta">Interactive Stage</p>
+                        </div>
+                        <button class="gallery-cta" aria-label="Nghe Xuân Huy Hoàng · Rock Version">Nghe ngay</button>
+                    </article>
+                    <article class="gallery-item" data-label="SoundCloud Session" data-tilt data-depth="0.55"
+                        data-reveal data-track="Mưa trên phố Huế · ALI"
+                        data-url="https://soundcloud.com/kl17ss/mua-tren-pho-hue-ai-by-ali?si=78bc449eb9604fd89a3ddca3cc36e029&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        data-tagline="Generative Visual">
+                        <div class="gallery-info">
+                            <p class="song-title">Mưa trên phố Huế · ALI</p>
+                            <p class="song-meta">Generative Visual</p>
+                        </div>
+                        <button class="gallery-cta" aria-label="Nghe Mưa trên phố Huế · ALI">Nghe ngay</button>
+                    </article>
+                    <article class="gallery-item" data-label="SoundCloud Session" data-tilt data-depth="0.4" data-reveal
+                        data-track="Nàng kiều lơ bước · Cover"
+                        data-url="https://soundcloud.com/kl17ss/nang-kieu-lo-buoc-ai-cover?si=afa82250eb9b4202b768bd93cfdf988e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        data-tagline="Workshop">
+                        <div class="gallery-info">
+                            <p class="song-title">Nàng kiều lơ bước · Cover</p>
+                            <p class="song-meta">Workshop</p>
+                        </div>
+                        <button class="gallery-cta" aria-label="Nghe Nàng kiều lơ bước · Cover">Nghe ngay</button>
+                    </article>
+                    <article class="gallery-item" data-label="SoundCloud Session" data-tilt data-depth="0.5" data-reveal
+                        data-track="Viết tiếp câu chuyện hòa bình"
+                        data-url="https://soundcloud.com/kl17ss/viet-tiep-cau-chuyen-hoa-binh-rock-version-ai?si=5ac99dce3a68404f8f49e2f214105bdf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                        data-tagline="XR Show">
+                        <div class="gallery-info">
+                            <p class="song-title">Viết tiếp câu chuyện hòa bình</p>
+                            <p class="song-meta">XR Show</p>
+                        </div>
+                        <button class="gallery-cta" aria-label="Nghe Viết tiếp câu chuyện hòa bình">Nghe ngay</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section blog" id="blog">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Blog mini</p>
+                    <h2>Nhịp sáng tạo mới nhất</h2>
+                </div>
+                <div class="blog-grid">
+                    <article data-reveal>
+                        <p class="post-date">Nov 10 · 4 min read</p>
+                        <h3>Chuyển hóa dữ liệu API thành nhạc nền tương tác</h3>
+                        <p>Hành trình biến luồng dữ liệu tài chính thành bản hòa âm trực tuyến giúp người dùng nghe được
+                            dao động thị trường.</p>
+                        <a href="#" class="text-link">Đọc thêm</a>
+                    </article>
+                    <article data-reveal>
+                        <p class="post-date">Oct 28 · 6 min read</p>
+                        <h3>Live coding performance tại Saigon Sound Week</h3>
+                        <p>Kết hợp TouchDesigner và WebGPU để biểu diễn trực tiếp, đồng bộ ánh sáng & nhịp beat trong
+                            thời gian thực.</p>
+                        <a href="#" class="text-link">Đọc thêm</a>
+                    </article>
+                    <article data-reveal>
+                        <p class="post-date">Oct 02 · 3 min read</p>
+                        <h3>5 tip thiết kế workshop lập trình sáng tạo</h3>
+                        <p>Từ cách chuẩn bị thiết bị đến format jam session giúp đội ngũ công nghệ bùng nổ ý tưởng.</p>
+                        <a href="#" class="text-link">Đọc thêm</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="primary-footer">
+        <div class="container footer-grid">
+            <div data-reveal>
+                <p class="logo-title">AliStudio</p>
+                <p>Studio kết hợp lập trình & âm nhạc tại TP Huế.</p>
+            </div>
+            <div class="footer-links" data-reveal>
+                <a href="https://www.facebook.com/aliofficial17" target="_blank" rel="noreferrer noopener">Liên hệ</a>
+            </div>
+            <p class="footer-note" data-reveal>© <span id="year"></span> AliStudio. Crafted with code & rhythm.</p>
+        </div>
+    </footer>
+
+    <div class="global-player" aria-live="polite">
+        <div class="player-meta">
+            <p class="player-track">Chọn một track để nghe</p>
+            <p class="player-tagline"></p>
+        </div>
+        <div class="player-controls">
+            <button class="player-btn" id="player-toggle" aria-label="Phát hoặc tạm dừng" disabled>Play</button>
+            <button class="player-minimize" id="player-minimize" aria-label="Thu nhỏ trình phát">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="4 14 10 14 10 20"></polyline>
+                    <polyline points="20 10 14 10 14 4"></polyline>
+                </svg>
+            </button>
+        </div>
+        <div class="player-minimized-content">
+            <div class="minimized-icon">
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="player-progress">
+                <span class="player-time player-time--current">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="player-time player-time--duration">0:00</span>
+            </div>
+            <iframe id="sc-widget" title="SoundCloud controller" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/kl17ss/th-t-t-nh-ali-remake%3Fsi%3Dfd929aba7452455c817143ba6f423283%26utm_source%3Dclipboard%26utm_medium%3Dtext%26utm_campaign%3Dsocial_sharing&color=%235cf0ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&visual=false"></iframe>
+        </div>
+
+        <div class="cursor-dot" aria-hidden="true"></div>
+        <div class="cursor-ring" aria-hidden="true"></div>
+        <script src="https://w.soundcloud.com/player/api.js" defer></script>
+        <script src="script.js" defer></script>
+</body>
+
+</html>
